@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PhotoViewViewController : UIViewController {
-
+@interface PhotoViewViewController : UIViewController 
+<UIImagePickerControllerDelegate> {
+    UIImageView *imageView;
+    UIImagePickerController *imagePicker;
 }
+@property(nonatomic,retain)IBOutlet UIImageView *imageView;
+@property(nonatomic,retain)IBOutlet UIImagePickerController *imagePicker;
 
 @end
 
